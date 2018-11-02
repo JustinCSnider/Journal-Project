@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CC7DB0FF218C8E6200DA913C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB0FE218C8E6200DA913C /* AppDelegate.swift */; };
-		CC7DB101218C8E6200DA913C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB100218C8E6200DA913C /* ViewController.swift */; };
+		CC7DB101218C8E6200DA913C /* editJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB100218C8E6200DA913C /* editJournalEntryViewController.swift */; };
 		CC7DB104218C8E6200DA913C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7DB102218C8E6200DA913C /* Main.storyboard */; };
 		CC7DB106218C8E6300DA913C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7DB105218C8E6300DA913C /* Assets.xcassets */; };
 		CC7DB109218C8E6300DA913C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7DB107218C8E6300DA913C /* LaunchScreen.storyboard */; };
 		CC7DB114218C8E6300DA913C /* JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB113218C8E6300DA913C /* JournalTests.swift */; };
 		CC7DB11F218C8E6300DA913C /* JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB11E218C8E6300DA913C /* JournalUITests.swift */; };
+		CC7DB12D218C90BA00DA913C /* journalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB12C218C90BA00DA913C /* journalTableViewController.swift */; };
+		CC7DB12F218C923700DA913C /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB12E218C923700DA913C /* Entry.swift */; };
+		CC7DB131218C931100DA913C /* journalEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB130218C931100DA913C /* journalEntryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		CC7DB0FB218C8E6200DA913C /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7DB0FE218C8E6200DA913C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC7DB100218C8E6200DA913C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC7DB100218C8E6200DA913C /* editJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editJournalEntryViewController.swift; sourceTree = "<group>"; };
 		CC7DB103218C8E6200DA913C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC7DB105218C8E6300DA913C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC7DB108218C8E6300DA913C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		CC7DB11A218C8E6300DA913C /* JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7DB11E218C8E6300DA913C /* JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITests.swift; sourceTree = "<group>"; };
 		CC7DB120218C8E6300DA913C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7DB12C218C90BA00DA913C /* journalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalTableViewController.swift; sourceTree = "<group>"; };
+		CC7DB12E218C923700DA913C /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		CC7DB130218C931100DA913C /* journalEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalEntryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				CC7DB0FE218C8E6200DA913C /* AppDelegate.swift */,
-				CC7DB100218C8E6200DA913C /* ViewController.swift */,
+				CC7DB100218C8E6200DA913C /* editJournalEntryViewController.swift */,
 				CC7DB102218C8E6200DA913C /* Main.storyboard */,
 				CC7DB105218C8E6300DA913C /* Assets.xcassets */,
 				CC7DB107218C8E6300DA913C /* LaunchScreen.storyboard */,
 				CC7DB10A218C8E6300DA913C /* Info.plist */,
+				CC7DB12C218C90BA00DA913C /* journalTableViewController.swift */,
+				CC7DB12E218C923700DA913C /* Entry.swift */,
+				CC7DB130218C931100DA913C /* journalEntryTableViewCell.swift */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC7DB101218C8E6200DA913C /* ViewController.swift in Sources */,
+				CC7DB12F218C923700DA913C /* Entry.swift in Sources */,
+				CC7DB101218C8E6200DA913C /* editJournalEntryViewController.swift in Sources */,
+				CC7DB12D218C90BA00DA913C /* journalTableViewController.swift in Sources */,
+				CC7DB131218C931100DA913C /* journalEntryTableViewCell.swift in Sources */,
 				CC7DB0FF218C8E6200DA913C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
