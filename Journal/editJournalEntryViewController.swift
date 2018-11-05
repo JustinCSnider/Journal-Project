@@ -42,7 +42,7 @@ class editJournalEntryViewController: UIViewController {
         if let owningNavigationController = navigationController {
             owningNavigationController.popViewController(animated: true)
         } else {
-            fatalError("The ThingViewController is not inside a navigation controller.")
+            fatalError("This should never happen")
         }
     }
     
